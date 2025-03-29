@@ -1,0 +1,124 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  background: #23242a;
+  justify-content: center;
+  align-items: center;
+  background-image: url('crypto.jpg');
+  background-size: cover;
+}
+
+.box {
+  position: relative;
+  background: #1c1c1c;
+  height: 400px;
+  width: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.form {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  inset: 2px;
+  z-index: 10;
+  border-radius: 8px;
+  padding: 20px 30px;
+  background: #28292d
+}
+
+.form h2 {
+  text-align: center;
+  letter-spacing: 0.09em;
+  font-weight: 500px;
+  color: orange;
+  border-bottom: 2px solid orangered;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.inputbox {
+  position: relative;
+  width: 500px;
+  margin-top: 50px
+}
+
+.inputbox input {
+  position: relative;
+  padding: 2px 10px 10px;
+  width: 100%;
+  z-index: 10;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 1em;
+  color: whitesmoke;
+}
+
+.inputbox span {
+  position: absolute;
+  color: #8f8f8f;
+  left: 0px;
+  padding: 5px 10px 10px;
+  font-size: 1em;
+  pointer-events: none;
+  transition: 0.5s
+}
+
+.inputbox input:valid~span,
+.inputbox input:focus~span {
+  transform: translateY(-35px);
+  font-size: 0.75em;
+  color: yellow;
+}
+
+.inputbox i {
+  position: absolute;
+  height: 2px;
+  width: 50%;
+  background: yellow;
+  pointer-events: none;
+  border-radius: 8px;
+  bottom: 0px;
+  left: 0px;
+  transition: 0.5s;
+}
+
+.link {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.link select{
+  background-color: #FFFFFF47;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.compte, .level{
+  justify-content: center;
+  color: white;
+  font-size: 13px;
+  text-align: center;
+}
+
+.hidden-text {
+  -webkit-text-security: disc;
+}
+
+.btn-login {
+    background-color: orange;
+    border: none;
+    padding: 4%;
+    border-radius: 10px;
+    margin-top: 40px;
+}
